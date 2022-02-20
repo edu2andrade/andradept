@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root{
@@ -8,8 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     --dark-green: #115D6D;
     --light-green: #24EFF2;
 
-    --text-title: #373E40;
-    --text-body: #77878B;
+    --text-body: #373E40;
+
+    --border-radius: 0.25rem;
   }
 
   *{
@@ -32,9 +33,10 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: var(--text-body);
   }
 
-  body, input, textarea, button {
+  body, input, textarea, button, a {
     font-family: 'Prompt', sans-serif;
     font-weight: 200;
   }
@@ -42,6 +44,13 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
   }
+
+  li,
+    a {
+      text-decoration: none;
+      list-style-type: none;
+      cursor: pointer;
+    }
 
   button {
     cursor: pointer;
@@ -51,4 +60,4 @@ export const GlobalStyle = createGlobalStyle`
     opacity: .6;
     cursor: not-allowed;
   }
-`
+`;
