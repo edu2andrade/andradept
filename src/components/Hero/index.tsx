@@ -10,16 +10,16 @@ export const Hero = () => {
           <nav>
             <ul>
               <li>
-                <a href="#">Serviços</a>
+                <a href="#services">Serviços</a>
               </li>
               <li>
-                <a href="#">Resultados</a>
+                <a href="#clients">Resultados</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#">Contactos</a>
+                <a href="#contact">Contactos</a>
               </li>
             </ul>
           </nav>
