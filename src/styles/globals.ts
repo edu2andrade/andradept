@@ -13,14 +13,17 @@ export const GlobalStyle = createGlobalStyle`
     --border-radius: 0.25rem;
   }
 
-  *{
-    margin: 0;
-    padding: 0;
+  *, *::after, *::before {
     box-sizing: border-box;
   }
 
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
   // Desktop font-size: 16px
-  html{
+  html {
     @media (max-width: 1080px) {
         font-size: 93.75%; // 15px
     }
@@ -35,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     color: var(--text-body);
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
   }
 
   body, input, textarea, button, a {
